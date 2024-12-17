@@ -25,21 +25,21 @@ plt.show()
 
 
 # Depremin büyüklük dağılımı
-# plt.figure(figsize=(8,6))
-# sns.histplot(df_clean['ML'], bins=50, kde=True, color='skyblue')
-# plt.title('Deprem Büyüklük Dağılımı')
-# plt.xlabel('Büyüklük (ML)')
-# plt.ylabel('Frekans')
-# plt.show()
+plt.figure(figsize=(8,6))
+sns.histplot(df_clean['ML'], bins=50, kde=True, color='skyblue')
+plt.title('Deprem Büyüklük Dağılımı')
+plt.xlabel('Büyüklük (ML)')
+plt.ylabel('Frekans')
+plt.show()
 
 
 
 # # Derinliğine Göre Deprem Büyüklükleri
-# plt.figure(figsize=(8,6))
-# sns.scatterplot(data=df_clean, x = 'Derinlik(km)', y = 'ML', hue='Yer', palette='deep')
-# plt.title('Derinliğine Göre Deprem Büyüklükleri')
-# plt.xlabel('Derinlik (km)')
-# plt.ylabel('Büyüklük (ML)')
-# plt.legend(bbox_to_anchor = (1.01,1), loc="center")   # hue nın nerede olacağını ayarla
-# plt.tight_layout()
-# plt.show()
+plt.figure(figsize=(8,6))
+sns.scatterplot(data=df_clean, x = 'Derinlik(km)', y = 'ML', hue='Yer', palette='deep')
+plt.title('Derinliğine Göre Deprem Büyüklükleri')
+plt.xlabel('Derinlik (km)')
+plt.ylabel('Büyüklük (ML)')
+plt.legend(bbox_to_anchor = (1.01,1), loc="center")   # hue nın nerede olacağını ayarla
+plt.tight_layout()
+plt.show()
